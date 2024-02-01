@@ -1,0 +1,41 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: aliceblue;
+}
+
+html {
+  background-color: hsl(358, 82%, 66%);
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #15173d;
+  padding: 20px 200px 20px 200px;
+  border: 5px solid rgb(8, 8, 56);
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #1b2a38;
+  text-shadow: 3px 3px 1px rgb(140, 64, 64);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
