@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RACES</title>
+  <link rel="stylesheet" href="styles.races.css">
+</head>
+<body>
+  <header>
+    <!-- 导航栏 -->
+  </header>
+  <div class="container">
+    <div class="year-row" id="yearRow">
+      <!-- 年份 -->
+      <div class="year" onclick="selectYear(this)">2020</div>
+      <div class="year" onclick="selectYear(this)">2021</div>
+      <div class="year" onclick="selectYear(this)">2022</div>
+      <div class="year" onclick="selectYear(this)">2023</div>
+      <div class="year" onclick="selectYear(this)">2024</div>
+    </div>
+    <div class="month-row" id="monthRow">
+        <!-- 月份 -->
+        <div class="month" onclick="selectMonth('January')">January</div>
+        <div class="month" onclick="selectMonth('February')">February</div>
+        <div class="month" onclick="selectMonth('March')">March</div>
+        <div class="month" onclick="selectMonth('April')">April</div>
+        <div class="month" onclick="selectMonth('May')">May</div>
+        <div class="month" onclick="selectMonth('June')">June</div>
+        <div class="month" onclick="selectMonth('July')">July</div>
+        <div class="month" onclick="selectMonth('August')">August</div>
+        <div class="month" onclick="selectMonth('September')">September</div>
+        <div class="month" onclick="selectMonth('October')">October</div>
+        <div class="month" onclick="selectMonth('November')">November</div>
+        <div class="month" onclick="selectMonth('December')">December</div>
+      </div>
+  </div>
+
+  <script src="script.races.js"></script>
+</body>
+</html>

@@ -1,26 +1,30 @@
 body {
-    margin: 0;
-    padding: 0;
+  background-image: url('images/C5.jpg');  /*背景图片*/
+  background-size: cover;
+  background-position: center;     /*需要插入背景图片*/
+  background-repeat: no-repeat ;  
+  margin: 0;
+  padding: 0;
   }
   
   header {
-    background-color: #050400; /* 背景 */
+    background-color: #000000; /* 背景 */
     color: #fff; /* 白色字体 */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
   }
-  
+
   .logo{
     flex: 0 0 auto;
-    width: 1000px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
   }
 
   .logo img {
-    max-width:  120%;  
-    max-height: 120%;
+    width:  100px;  
+    height: 80px;
   }
   
   nav ul {
@@ -35,6 +39,7 @@ body {
   }
   
   nav ul li a {
+    font-size: xx-large;
     text-decoration: none;
     color: #ffffff; /* 白色字体 */
     font-weight: bold;
@@ -45,21 +50,31 @@ body {
     color: rgb(248, 5, 5); /* 鼠标悬停时改变字体颜色 */
   }
 
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .box{
+    position: relative;
     width: 250px;
     height: 350px;
     margin: 60px;    /*外边距*/
-    border: 10px solid #fff;
+   /* border: 2px solid #060d6d;*/
     transition: color 0.3s ease;
   }
   
-  .box :hover{
-    color: rgb(30, 43, 226) ; /*鼠标悬停变色*/
+  .box :hover {
+    color: rgb(251, 1, 1) ; /*鼠标悬停变色*/
+    transform: scale(1.1);
   }
 
   .box img{
@@ -68,10 +83,60 @@ body {
     object-fit: cover;
   }
 
-  .caption{  /*出不来*/
-    position: absolute;       /*绝对定位 相对于.box*/  
-    bottom: 10px;  /*距离底部....*/
+  .text{  
+    position: absolute;
+    color: rgb(255, 255, 255);
+    position: relative;        
+    bottom: 50px;  /*距离底部....*/
     left: 0;   /*水平居左*/
     width: 100%;   /*宽度占满.bom*/
     text-align: center;  /*文字居中*/
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    text-decoration-line: none;
     }
+
+ .sidebar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-top: 100px;
+  transform: translateY(-50%);
+}
+
+ .directory{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .box-small{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid#ffffff;
+  }
+
+  .login-popup {
+    display: none; /* 初始状态下隐藏 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+  }
+ 
+  .login-popup-content {
+    text-align: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  } 

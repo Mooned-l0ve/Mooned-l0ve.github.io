@@ -8,51 +8,73 @@
 </head>
 <body>
   <header>
-    <div class="images/C1+.jpg">
-      <img src="images/C1+.jpg" alt="cyclist logo">
+    <div class="images/C7+.jpg">
+      <img src="images/C7+.jpg" alt="cyclist logo">
     </div>
     <nav>
       <ul>
-        <li><a href="#">TEAM</a></li>
-        <li><a href="#">RACES</a></li>
-        <li><a href="#">PARTERS</a></li>
-        <li><a href="#">INEOS</a></li>
-        <li><a href="#">CONTENT</a></li>
+        <li><a href="index.team.html">TEAM</a></li>        <!--"#"处可添加...跳转其他页面-->
+        <li><a href="index.races.html">RACES</a></li>
+        <li><a href="index.parters.html">PARTERS</a></li>
+        <li><a href="index.store.html">STORE</a></li>
+        <li><a href="index.content.html">CONTENT</a></li>
       </ul>
     </nav>
   </header>
-  <div class="container">
-    <div class="box">
+ 
+       <!--登录见面设置-->
+ <!-- <div class="box" onclick="openLoginPopup()">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <div class="text">Click me to login</div>
+  </div>
+  <div id="loginPopup" class="login-popup">
+    <div class="login-popup-content">
+      <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+      <h2>Login</h2>-->
+      <!-- 添加登录表单 -->
+  <!--    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<script src="script.js"></script>
+</body>
+</html>
+  <div class="wrapper">
+   <div class="container">
+    <a href="page 1" class="box">       <!--改变“page 1”可实现跳转到其他页面-->
         <img src="placeholder.jpg" > 
-    <!--<div class="caption">Text 1</div>    弄不出来-->    <!--这里可以添加“alt”    效果：显示图片下方文字-->
-    </div>
-    <div class="box">
+        <div class="text">Box 1</div>       <!--这里可以添加“alt”    效果：显示图片下方文字-->      <!--Text可以修改为人名等。-->
+    </a>                                     
+    <a href="page 2" class="box">
         <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 2</div>--> 
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 3</div>--> 
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 4</div>--> 
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 5</div>--> 
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 6</div>-->
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-    <!--<div class="caption">Text 7</div>-->
-    </div>
-    <div class="box">
-        <img src="placeholder.jpg" >
-     <!--<div class="caption">Text 8</div>-->
-    </div>
+        <div class="text">Box 2</div> 
+    </a>
+    <a href="page 3" class="box">
+      <img src="placeholder.jpg" >
+      <div class="text">Box 3</div> 
+    </a>
+    <a href="page 4" class="box">
+      <img src="placeholder.jpg" >
+      <div class="text">Box 4</div> 
+    </a>
+    <a href="page 5" class="box">
+      <img src="placeholder.jpg" >
+      <div class="text">Box 5</div> 
+    </a>
+   </div>
+  <div class="sidebar">
+   <div class="directory">
+    <div class="box-small"></div>      <!--在导航栏和大方块中间 类似于“目录”的东西-->
+    <div class="box-small"></div>
+    <div class="box-small"></div>
+   </div>
+  </div>
 </body>
 </html>
