@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin-top: 100px; /* 为了避免与导航栏重叠 */
+  }
+  
+  .year-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* 添加下边距 */
+  }
+  
+  .year {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: xx-large;
+  }
+  
+  .year:hover {
+    transform: scale(1.5);
+    color: #ff0000; /* 鼠标悬停时改变颜色 */
+  }
+  
+  .month-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .month {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: large;
+  }
+
+  .month:hover {
+    transform: scale(1.2);
+    color: #ff0000; /* 鼠标悬停时改变颜色 */
+  }
